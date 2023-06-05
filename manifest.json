@@ -1,0 +1,22 @@
+{
+  "name": "google-plugin-query-search",
+  "description": "谷歌插件: 页面内的query参数增删改查",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/popup.js"],
+      "css": ["src/popup.css"],
+      "run_at": "document_idle",
+      "persistent": true
+    }
+  ],
+  "permissions": ["tabs", "activeTab", "commands"]
+}

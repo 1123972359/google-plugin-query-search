@@ -1,0 +1,45 @@
+.Query__Search {
+  width: 500px;
+  padding: 10px;
+}
+.Query__Search > .Query__Search_header {
+  font-size: 20px;
+  font-weight: bold;
+}
+.Query__Search > .Query__Search_header_textarea {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.Query__Search_row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.Query__Search_row > .Query__Search_title {
+  font-weight: bold;
+  min-width: 100px;
+  max-width: 200px;
+  word-break: break-all;
+  margin-right: 10px;
+}
+.Query__Search_row > .Query__Search_textarea {
+  font-size: large;
+  width: 100%;
+}
+.Query__Search__Options {
+  display: flex;
+  align-items: center;
+}
+.Query__Search__Options > .btn {
+  background-color: #409eff;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+.Query__Search__Options > .btn:first-child {
+  margin-left: 0;
+}
